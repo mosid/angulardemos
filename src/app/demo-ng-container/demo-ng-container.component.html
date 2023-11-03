@@ -1,0 +1,9 @@
+<ng-container *ngIf="activeSession">
+    <p>ng-container demo</p>
+    <div *ngIf="hasBalance">
+      <p>Your amount is 5000€.</p>
+    </div>
+    <div *ngIf="!hasBalance">
+      <p>Sorry, no balance.</p>
+    </div>
+  </ng-container>

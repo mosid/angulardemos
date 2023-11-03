@@ -1,0 +1,11 @@
+
+<ng-template #myTemplate>
+    <p>ng-template demo.</p>
+    <div *ngIf="hasBalance">
+      <p>Your amount is 5000€.</p>
+    </div>
+    <div *ngIf="!hasBalance">
+      <p>Sorry, no balance.</p>
+    </div>
+  </ng-template>
+  <ng-container *ngTemplateOutlet="myTemplate"></ng-container>
